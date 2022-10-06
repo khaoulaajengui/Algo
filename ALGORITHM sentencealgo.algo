@@ -1,0 +1,24 @@
+ALGORITHM sentence 
+VAR
+    ch:STRING;
+    ,NV,NW,i: INTEGER;
+    p:CHAR;
+BEGIN
+p:=".";
+NV:=0;
+NW=0;
+write(please inter the sentence);
+read(ch);
+FOR i FROM 0 TO max p step  DO;
+IF (ch[i]:="e","a","y","i","o","u") THEN;
+    NV=NV+1;
+END_IF;
+   IF (ch[i]=" ") THEN;
+NW=NW+1;
+   END_IF;
+   i:=i+1;
+END_FOR;
+write("number of words is:",NW+1);
+write("number of vowels is:",NV);
+write("number of characters is:",i);
+END
